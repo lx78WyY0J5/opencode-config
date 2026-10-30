@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "llama.cpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:1235/v1"
+      },
+      "models": {
+        "bonsai-9b": {
+          "name": "Ternary-Bonsai-2-9B (local)",
+          "limit": {
+            "context": 50000,
+            "output": 16384
+          }
+        }
+      }
+    }
+  },
+  "model": "llama.cpp/bonsai-9b"
+}
